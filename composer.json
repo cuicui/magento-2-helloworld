@@ -3,12 +3,20 @@
 	"description" : "gos",
 	"type" : "magento2-module",
 	"version" : "1.0.0",
-	"minimum-stability" : "stable",
+	"minimum-stability" : "dev",
 	"license" : [
 		"OSL-3.0",
 		"AFL-3.0"
 	],
 	"autoload" : {
+		"files" : [
+			"registration.php"
+		],
+		"psr-4" : {
+			"Gos\\Hellworld\\" : ""
+		}
+	},
+	"autoload-dev" : {
 		"files" : [
 			"registration.php"
 		],
